@@ -10,9 +10,10 @@
         body { font-family: 'Cairo', sans-serif; background-color: #050505; color: white; scroll-behavior: smooth; margin: 0; }
         .gold-text { color: #D4AF37; }
         .gold-bg { background-color: #D4AF37; }
-        /* كود لضمان سطوع الألوان بنسبة 100% ومنع البهتان */
-        .product-card { background-color: #111827; opacity: 1 !important; transition: transform 0.3s ease; }
+        /* ضمان ظهور العناصر بوضوح تام وعدم وجود بهتان */
+        .product-card { background-color: #111827 !important; border: 1px solid #1f2937; opacity: 1 !important; transition: transform 0.3s ease; display: block !important; }
         .product-card:hover { transform: translateY(-10px); border-color: #D4AF37; }
+        .hero-section { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.postimg.cc/bNmxT0VN/FB-IMG-1769973269068.jpg'); }
     </style>
 </head>
 <body>
@@ -25,7 +26,7 @@
         </ul>
     </nav>
 
-    <section id="home" class="py-40 px-6 text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.postimg.cc/bNmxT0VN/FB-IMG-1769973269068.jpg');">
+    <section id="home" class="py-40 px-6 text-center bg-cover bg-center hero-section">
         <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">عالم من <span class="gold-text">الفخامة</span></h2>
         <p class="text-white text-lg max-w-2xl mx-auto mb-10 font-bold">نصنع السعادة يدوياً بأجود أنواع الكاكاو العالمي.</p>
         <a href="#products" class="gold-bg text-black px-12 py-4 rounded-full font-bold text-xl inline-block shadow-2xl hover:scale-105 transition">تصفح المنتجات</a>
@@ -35,25 +36,25 @@
         <h3 class="text-4xl font-bold text-center mb-16 gold-text">قائمة منتجاتنا الفاخرة</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
             
-            <div class="product-card rounded-2xl border border-gray-800 p-5 text-center shadow-lg">
-                <img src="https://i.postimg.cc/cCSR90nV/Jouza-algerienne-jouza-zouzacaramel-jawza-gateaualgerien-caprice-chocolat-noixdecoco-(1).jpg" alt="جوزة فاخرة" class="h-64 w-full object-cover rounded-xl mb-6 shadow-md">
+            <div class="product-card rounded-2xl p-5 text-center shadow-lg">
+                <img src="https://i.postimg.cc/cCSR90nV/Jouza-algerienne-jouza-zouzacaramel-jawza-gateaualgerien-caprice-chocolat-noixdecoco-(1).jpg" alt="جوزة فاخرة" class="h-64 w-full object-cover rounded-xl mb-6 shadow-md border border-gray-700">
                 <h4 class="text-2xl font-bold mb-2">جوزة بالكراميل والشوكولاتة</h4>
                 <p class="gold-text font-bold mb-6 text-2xl">1200 DA</p>
-                <button class="w-full bg-white text-black py-3 rounded-lg font-bold hover:bg-yellow-500 transition text-lg">اطلب الآن</button>
+                <button class="w-full bg-white text-black py-3 rounded-lg font-bold hover:bg-yellow-500 transition text-lg shadow-md">اطلب الآن</button>
             </div>
 
-            <div class="product-card rounded-2xl border border-gray-800 p-5 text-center shadow-lg">
+            <div class="product-card rounded-2xl p-5 text-center shadow-lg">
                 <div class="h-64 bg-gray-800 rounded-xl mb-6 flex items-center justify-center text-gray-400 font-bold border border-dashed border-gray-600">قريباً.. صورة المنتج</div>
                 <h4 class="text-2xl font-bold mb-2">ترافل ملكي</h4>
                 <p class="gold-text font-bold mb-6 text-2xl">5500 DA</p>
-                <button class="w-full bg-white text-black py-3 rounded-lg font-bold hover:bg-yellow-500 transition text-lg">اطلب الآن</button>
+                <button class="w-full bg-white text-black py-3 rounded-lg font-bold hover:bg-yellow-500 transition text-lg shadow-md">اطلب الآن</button>
             </div>
 
-            <div class="product-card rounded-2xl border border-gray-800 p-5 text-center shadow-lg">
+            <div class="product-card rounded-2xl p-5 text-center shadow-lg">
                 <div class="h-64 bg-gray-800 rounded-xl mb-6 flex items-center justify-center text-gray-400 font-bold border border-dashed border-gray-600">قريباً.. صورة المنتج</div>
-                <h4 class="text-2xl font-bold mb-2">بوكس مشكل</h4>
+                <h4 class="text-2xl font-bold mb-2">بوكس السعادة</h4>
                 <p class="gold-text font-bold mb-6 text-2xl">2500 DA</p>
-                <button class="w-full bg-white text-black py-3 rounded-lg font-bold hover:bg-yellow-500 transition text-lg">اطلب الآن</button>
+                <button class="w-full bg-white text-black py-3 rounded-lg font-bold hover:bg-yellow-500 transition text-lg shadow-md">اطلب الآن</button>
             </div>
 
         </div>
